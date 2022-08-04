@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Your IP</title>
+
+<body>
+<h1>Hello 👋 I show your IP-address from three resources.</h1>
+<div>
+    {% for info in data %}
+    <ul>
+
+        {% for key, value in info.items() %}
+
+        <li/> <b>{{ key }}:</b> {{ value }}
+
+        {% endfor %}
+
+    </ul>
+    {% endfor %}
+</div>
+
+</body>
+
+</html>
